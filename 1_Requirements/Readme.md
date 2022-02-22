@@ -31,7 +31,7 @@ a secondary  stand-by  set-upthat  can  switch  over  from automated to manual m
 
 ## SWOT ANALYSIS
 ### STRENGTH:
- This project helps in reducing the time delay.
+ > This project helps in reducing the time delay.
 
 ### WEAKNESS:
 > IR sensors sometimes may absorb normal light also. As a result, traffic system works in improper way.
@@ -54,7 +54,7 @@ a secondary  stand-by  set-upthat  can  switch  over  from automated to manual m
 > Easy convenience to handle.
 
 ### THREADS:
-IR sensors sometimes may absorb normal light also. As a result, traffic system works in improper way.
+> IR sensors sometimes may absorb normal light also. As a result, traffic system works in improper way.
 
 ## 4W's AND 1H
 ### WHAT:
