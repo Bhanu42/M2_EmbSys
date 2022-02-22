@@ -10,17 +10,17 @@ In this system, we will use IR sensors to measure the traffic density.We have to
 Based on these sensors, controller detects the traffic and controls the traffic system.
 
 ## IDENTIFYING THE REQUIREMENTS
-SOFTWARE COMPONENTS:-
+
+
+### SOFTWARE COMPONENTS:-
      ATMEGA328P
-      
-      SimulIDE
-
-      Virtual studio code
-
+     SimulIDE
+     Virtual studio code
       avr-gcc
-
       Make
-
+     
+     
+     
 ## STATE OF ART
 Though the prototype model worked very efficiently with remarkable outputs, the real life situation is going to be way  more  challenging  and  demanding.  Few  of  the challenges that should be taken into account are listed as follows 
 Low range IR sensors may not be an answer for long range signaling system. We may resort to ultrasound or radar techniques
