@@ -91,3 +91,6 @@ It controls traffic signals automatically using sensors and microcontroller.
 |LLR_3|Cameras|Implemented|
 
 
+
+
+
