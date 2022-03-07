@@ -1,97 +1,80 @@
-# REQUIREMENTS
-## INTRODUCTION
-The  project  is  aimed  at  designing  a  density based dynamic traffic signal system 
-where the  timing of signal  will  change  automatically  on  sensing  the  traffic density  at any  junction.  Traffic  congestion  is  a  severe problem in most cities across the world and therefore it is time to shift more manual mode or fixed timer mode to an automated  system  with  decision  making capabilities. Present  day traffic  signaling system  is fixed  time based which  may  render
-inefficient  if one  lane  is operational than the others. To optimize this problem we have made a framework  for  an  intelligent  traffic  control  system.
+# **Introduction:**
 
+The heat control system is basically used to control the temperature of a car seat. When a user or driver of the car gets seated on a car, the button sensor gets activated. After that, the user gets access to turn on the heater. The temperature sensor keeps monitoring the temperature and sends the analog value to the microcontroller. The microcontroller processes the analog input of the temperature sensor and outputs a temperature value through serial communication. All the activities of the activities of the control system are done on a microcontroller called Atmega328.
 
-## FEATURES OF TRAFFIC SIGNAL SYSTEM
-In this system, we will use IR sensors to measure the traffic density.We have to arrange one IR sensor for each road; these sensors always sense the traffic on that particular road. All these sensors are interfaced to the microcontroller.
-Based on these sensors, controller detects the traffic and controls the traffic system.
+# **Research:**
 
-## IDENTIFYING THE REQUIREMENTS
+Seat warmers were first introduced by Cadillac in 1966 to help with backaches. Some vehicles come with car seat warmers, which heat up the seat with the push of a button. Normally the buttons are located on the side of the driver and passenger door. In some vehicles, just the bottom of the seat warms up, where in others both the bottom and back warm up.
+![button](https://user-images.githubusercontent.com/94435852/143817250-e4a4ee9b-8fa3-45e3-b9f0-4c4acedd167d.PNG)
 
+# **Benefits:**
 
-### SOFTWARE COMPONENTS:-
-     ATMEGA328P
-     SimulIDE
-     Virtual studio code
-      avr-gcc
-      Make
-     
-     
-     
-## STATE OF ART
-Though the prototype model worked very efficiently with remarkable outputs, the real life situation is going to be way  more  challenging  and  demanding.  Few  of  the challenges that should be taken into account are listed as follows 
-Low range IR sensors may not be an answer for long range signaling system. We may resort to ultrasound or radar techniques
-for big scale set-ups.
-• Next is  the influence of stray signals that may alter the reading of sensor receptors and lead to conveying false information to the microcontroller. 
-• Periodic checking of the accuracy and precision is a must  for  efficacious  operation  of  this prototype.  Safety  first:  it  has  to  be  absolutely  made  sure  that  no compromise  is  being  made  on  safety  issues,  
-a secondary  stand-by  set-upthat  can  switch  over  from automated to manual mode, should be provided in case of sensor  or circuit  malfunctions  so  that   crowd does not go beyond control.  As  part  of  future  advancements,  the  traffic check  post may be  connected by wireless  transmitters by  the crossings ahead may be an anticipation of the traffic that is approaching. This may be achieved the connecting the sensor  network  with  GPS  connectivity  and  short  wave radio transmission signals. This act as a feedforward system  making the  signaling  system even  more smooth and congestion free.
+Heated seats can make cars much more comfortable in the winter, or for those who often get cold even in the summer. The heater in most vehicles work well, but the car’s seat warmer is close to your body allowing you to warm up faster. In some cases, the seat warms up before the rest of the vehicle does.
 
-## SWOT ANALYSIS
-### STRENGTH:
- > This project helps in reducing the time delay.
+## Details requirements
+### High Level Requirements:
+| ID | Description | Status |
+|------| ------| ------|
+| HLR1 | When the two switches are closed, the first LED glows indicating the actuation of the system and the heater. | Implemented
+|HLR2  | Next the analog input from the temperature sensor is received and digitized.| Implemented
+|HLR3  | The hard disk must be 4 GB . |	Implemented
+|HLR4  | The web browser must be Microsoft Internet Explorer with a resolution of at least 800 \* 600. |	Implemented
 
-### WEAKNESS:
-> IR sensors sometimes may absorb normal light also. As a result, traffic system works in improper way.
+#### Low Level Requirements:
 
-> IR sensors work only for fewer distances.
+| ID | Description | Status |
+|-------|------|------|
+| LLR1 | The digitized temperature input is visualized using Pulse Width Modulation.| Implemented 
+| LLR2 | The system runs effectively on Windows 2000 server but it will also run equally well on compatible operating systems.  | Implemented
+| LLR3 | The corresponding temperature values based on the digitized temperature input is transmitted by the UART protocol. Here the data is displayed on the serial monitor.| Implemented 
+ 
+ # **Functionality:**
 
->We have to arrange IR sensors in accurate manner otherwise they may not detect the traffic density.
+- When the two switches are closed, the first LED glows indicating the actuation of the system and the heater.
+- Next the analog input from the temperature sensor is received and digitized.
+- The digitized temperature input is visualized using Pulse Width Modulation.
+- The corresponding temperature values based on the digitized temperature input is transmitted by the UART protocol. Here the data is displayed on the serial monitor.
 
-### OPPORTUNITIES:
-> Avoids wastage of time due to the traffic
+# **SWOT Analysis:**
 
-> Fully automatic
+**Strength:**
 
-> Low power consumption
+The advantage of such devices is that you can not wait until the entire salon warms up, and immediately go on business. After all, heating has a local effect, so they do their job in 2-5 minutes.
 
-> It provides the easy access in the traffic light
+**Weakness:**
+- If you do not follow the recommendations and go too far with the temperature, this can lead to a decrease in the driver’s attentiveness, cause fatigue and headaches, and also increase the risk of catching a cold due to a violation of the body’s temperature regime.
+- the power cord is plugged in only after you fix the cape;
+- if you spill any liquid on the heater cover, immediately turn off the device;
+- if you leave the car, do not leave the device turned on;
+- you can not wash the capes, iron, maximum-shake;
+- Use dry bags to store the heater.
 
-> Low cost to design the circuit, maintenance of the circuit is good
+**Opportunities:**
+The advanced technologies in automotive seat heaters are predicted to increase the growth of the market in the review period. The latest features like modern seat heaters like consistent and controlled warmth, heating level adjustment are attracting the consumers and are expected to propel the market growth. Growing demand for comfort and energy capabilities in vehicles is accelerating market growth.
 
-> Easy convenience to handle.
+**Threats:**
+- A lack of regulation for these seats has left consumers more open to injuries.
+- Within 10 minutes at 120 degrees an individual can experience third-degree burns. For those with the inability to feel the temperature at the time, this can prove even more dangerous. Those who have been diagnosed with conditions such as paralysis, diabetes, and neuropathy are less like to feel the heat in their lower extremities.
+- High electrical resistance could cause the heater pad in the seat to overheat.
 
-### THREADS:
-> IR sensors sometimes may absorb normal light also. As a result, traffic system works in improper way.
+# **Features:**
+A new feature is seats that use a single component to heat and cool the seat. Due to the complexity of the system, all of the functions are computer controlled. This means that diagnostics and repairs are more in depth. However, this also means that DTCs may be set if there are any malfunctions. A scan tool will be required to pull these trouble codes and diagnose any issues.
 
-## 4W's AND 1H
-### WHAT:
-This Project explains you how to control the traffic based on density.
+# **4W and 1H:**
 
-### WHERE:
-In High traffic density areas to control traffic automatically and efficiently.
+## What:
+Heated seats can make cars much more comfortable in the winter, or for those who often get cold even in the summer. The heater in most vehicles work well, but the car's seat warmer is close to your body allowing you to warm up faster. In some cases, the seat warms up before the rest of the vehicle does.
 
-### WHEN:
-During dense traffic areas.
+## When:
+Heated front seats not only offer luxurious comfort, relaxation and benefits for physical health, but also increase safety. Heating seats and backrests ensures a high level of well-being and prevents a cramped posture. Winter clothes limiting freedom of movement can be dispensed with. This also results in better operation of the restraint system by reducing the slack in safety belts. People with back or kidney problems benefit from a possible reduction of pain. It is mostly used in cars.
 
-High populated areas.
+## Where:
+In car seats
 
-### WHY:
-If there will be no traffic on the other signal, one shouldn’t wait for that signal. 
-The system will skip that signal and will move on the next one.
+## Why:
+Heated seats can bring a lot of different benefits beyond just having a nice and warm place to sit. The single greatest benefit that heated seats can bring is the therapeutic warmth it offers. This is great for older drivers or people with a few aches and pains.
 
-### HOW:
-It controls traffic signals automatically using sensors and microcontroller.
-
-## HIGH LEVEL REQUIREMENTS
-| ID | Description | Status | 
-| ----- | ----- | --------- |
-|HLR_1|Fully Automated|Future|
-|HLR_2|Sensors And Atmega328|Implemented|
-|HLR_3|Alarm Interfaced with atmega328|Future|
-
-## LOW LEVEL REQUIREMENTS
-
-|ID|DESCRIPTION|STATUS|
-|---|---|---|
-|LLR_1|LEDs Interfaced with atmega|Implemented|
-|LLR_2|Resistors|Implemented|
-|LLR_3|Cameras|Implemented|
-
-
-
-
+## How:
+The longer the seat cushion stays on, the hotter it gets. If it were to stay on for too long, it would get hot enough to become uncomfortable or even dangerous to sit in. It could even start a fire in the cushion. To prevent this, most car seat heaters have a thermostat. The thermostat measures the temperature in the cushion. When it reaches a certain temperature, the thermostat sends a signal, automatically turning off the relay until the seat cools down a bit. At that point, the thermostat turns the relay back on again. Many seat cushions also have “high” and “low” settings that let the driver control the temperature of the seat cushions.
 
 

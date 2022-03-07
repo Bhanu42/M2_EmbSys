@@ -1,4 +1,4 @@
 
-# M2_EmbSys_Traffic-signal-system
+# M2_EmbSys_SEAT-HEATING-SYSTEM
 
-The project is aimed at designing a density based dynamic traffic signal system where the timing of signal will change automatically on sensing the traffic density at any junction. Traffic congestion is a severe problem in most cities across the world and therefore it is time to shift more manual mode or fixed timer mode to an automated system with decision making capabilities. Present day traffic signaling system is fixed time based which may render inefficient if one lane is operational than the others. To optimize this problem we have made a framework for an intelligent traffic control system.
+The heat control system is basically used to control the temperature of a car seat. When a user or driver of the car gets seated on a car, the button sensor gets activated. After that, the user gets access to turn on the heater. The temperature sensor keeps monitoring the temperature and sends the analog value to the microcontroller. The microcontroller processes the analog input of the temperature sensor and outputs a temperature value through serial communication. All the activities of the activities of the control system are done on a microcontroller called Atmega328.
